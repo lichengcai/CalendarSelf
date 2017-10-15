@@ -36,6 +36,8 @@ public class MainActivity extends BaseActivity {
         }
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
+
+
         mCalendarDateView.setAdapter(new CaledarAdapter() {
             @Override
             public View getView(View convertView, ViewGroup parentView, CalendarBean bean) {
