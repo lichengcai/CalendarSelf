@@ -15,6 +15,11 @@ public class CalendarBean {
     public String chinaMonth;
     public String chinaDay;
 
+    //是否签到
+    private boolean sign;
+    //记录内容
+    private String content;
+
     public CalendarBean(int year, int moth, int day) {
         this.year = year;
         this.moth = moth;
@@ -48,6 +53,22 @@ public class CalendarBean {
 
          }
         return s ;
+    }
+
+    public boolean isSign() {
+        return sign;
+    }
+
+    public void setSign(boolean sign) {
+        this.sign = sign;
+    }
+
+    public String getContent() {
+        return content;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
     }
 
     @Override

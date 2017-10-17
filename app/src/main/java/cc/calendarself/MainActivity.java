@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
+import android.widget.EditText;
 import android.widget.TextView;
 import com.codbking.calendar.CaledarAdapter;
 import com.codbking.calendar.CalendarBean;
@@ -23,6 +24,8 @@ public class MainActivity extends BaseActivity {
     TextView mTitle;
     @BindView(R.id.calendarDateView)
     CalendarDateView mCalendarDateView;
+    @BindView(R.id.edit_content)
+    EditText mEdit_content;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -69,5 +72,8 @@ public class MainActivity extends BaseActivity {
 
         int[] data = CalendarUtil.getYMD(new Date());
         mTitle.setText(data[0] + "/" + data[1] + "/" + data[2]);
+
+        mEdit_content.setText("附近搜集的附近的搜集金佛山几点咯即将司法鉴定了放假奥放假奥多久啊垃圾");
+
     }
 }
