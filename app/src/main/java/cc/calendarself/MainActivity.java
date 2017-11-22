@@ -73,7 +73,5 @@ public class MainActivity extends BaseActivity {
         int[] data = CalendarUtil.getYMD(new Date());
         mTitle.setText(data[0] + "/" + data[1] + "/" + data[2]);
 
-        mEdit_content.setText("附近搜集的附近的搜集金佛山几点咯即将司法鉴定了放假奥放假奥多久啊垃圾");
-
     }
 }
